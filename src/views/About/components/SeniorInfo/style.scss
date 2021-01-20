@@ -1,0 +1,122 @@
+.seniorinfo-container{
+  display: flex;
+  flex-direction: column;
+  /*height: 94vh;*/
+  min-height: 830px;
+  background-color: #040d21;
+  position: relative;
+ 
+}
+
+.seniorinfo-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #fff;
+  
+}
+.seniorinfo-nav .container {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.seniorinfo-nav .container a {
+  display: block;
+  padding: .25rem 0;
+  border-bottom: 2px solid transparent;
+  border-left: 0;
+  color: #6a737d;
+}
+
+.seniorinfo-part1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 1464px;
+  padding: 6.5rem 0 1.5rem 0;
+  background-color: #040d21;
+  //margin-right: auto;
+  //margin-left: auto;
+  position: relative;
+}
+
+.seniorinfo-part1-wraper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem!important;
+  padding-left: 1.5rem!important;
+  margin-left: 8.33%;
+  width: 83.33%;
+}
+.seniorinfo-part1-wraper .title{
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  // background: -webkit-linear-gradient(-70deg,#a2facf,#64acff);
+  color: #fff;
+  max-width: 40.5rem;
+}
+
+.seniorinfo-part1-wraper .gitlog-ul{
+  padding-bottom: 2rem!important;
+  position: relative;
+}
+.seniorinfo-part1-wraper .gitlog-li{
+  padding-right: 1.5rem!important;
+  padding-left: 1.5rem!important;
+  padding-bottom: 1.5rem!important;
+  width: 50%; 
+  margin-top: -1rem;
+}
+.seniorinfo-part1-wraper .gitlog-li-c{
+  padding-right: 1.5rem!important;
+  padding-left: 1.5rem!important;
+  width: 50%; 
+  padding-top: .5rem!important;
+  padding-bottom: .5rem!important;
+}
+
+.seniorinfo-part1-wraper .gitlog-ul:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1.5rem;
+  display: block;
+  width: 2px;
+  content: "";
+  background: #42526d;
+}
+.seniorinfo-part1-wraper .gitlog-li svg, .seniorinfo-part1-wraper .gitlog-li-c svg {
+  z-index: 1;
+  position: relative
+}
+.seniorinfo-part1-wraper .gitlog-li circle {
+  fill: #040d21;
+  stroke: #42526d;
+}
+.seniorinfo-part1-wraper .gitlog-icon{
+  float: left;
+  background: #040d21;
+  margin-left: calc(-3rem - 13px);
+  margin-right: -2.5rem;
+}
+
+.seniorinfo-part1-wraper .gitlog-title{
+  color: #8193b2;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.seniorinfo-part1-wraper .gitlog-content{
+  color: #8193b2;
+  font-size: .875rem;
+}
+.seniorinfo-part1-wraper .gitlog-content strong{
+  color: #fff;
+  font-weight: 600;
+}
