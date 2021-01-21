@@ -83,6 +83,114 @@ const SeniorInfo: FC<SeniorInfoProps> = props => {
           </ul>
         </div>
       </div>
+
+      <div className="seniorinfo-part2">
+        <div className="seniorinfo-part2-wraper">
+          <div className="seniorinfo-part2-light ">
+            <div className="gitlog-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                height="26"
+                width="28"
+                className="flex-shrink-0 mr-3-fluid">
+                <path d="m0 0h28v26h-28z" fill="#fff"></path>
+                <g fill="#8392ad">
+                  <path d="m11.25 13a.75.75 0 0 1 -.22.53l-2.75 2.75a.75.75 0 0 1 -1.06-1.06l2.22-2.22-2.22-2.22a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5z"></path>
+                  <path
+                    clipRule="evenodd"
+                    d="m2 5.75c0-.966.784-1.75 1.75-1.75h20.5c.966 0 1.75.784 1.75 1.75v14.5a1.75 1.75 0 0 1 -1.75 1.75h-20.5a1.75 1.75 0 0 1 -1.75-1.75zm1.75-.25a.25.25 0 0 0 -.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25v-14.5a.25.25 0 0 0 -.25-.25z"
+                    fillRule="evenodd"></path>
+                </g>
+              </svg>
+              git checkout -b origin add-status-screens
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              preserveAspectRatio="none"
+              viewBox="0 0 110 142"
+              className="home-branch">
+              <path d="m1-8c0 75 108 75 108 150" strokeWidth="2" vectorEffect="non-scaling-stroke"></path>
+            </svg>
+            <div className="gitlog-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                height="20"
+                viewBox="0 0 28 20"
+                width="28"
+                className="">
+                <circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" strokeWidth="2"></circle>
+              </svg>
+              origin/add-status-screens
+            </div>
+            <ul className="gitlog-ul">
+              <li className="gitlog-li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  height="28"
+                  viewBox="0 0 28 20"
+                  width="28"
+                  className="">
+                  <circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" strokeWidth="2"></circle>
+                </svg>
+
+                <div className="js-build-in-item build-in-slideX-left h5-mktg-fluid h4-sm-mktg-fluid text-gray-mktg lh-condensed text-semibold-mktg mb-5-fluid mb-lg-0 col-5-max">
+                  <span className="text-gray-dark-mktg">Code review is built in.</span> Pull requests cover the entire
+                  review flow: propose changes, browse code, make a suggestion, and sign off in one place.
+                </div>
+              </li>
+              <li className="gitlog-li">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  height="26"
+                  width="28"
+                  className="home-git-item flex-shrink-0 mr-3-fluid position-relative z-1">
+                  <path d="m0 0h28v26h-28z" fill="#fff"></path>
+                  <g fill="#8392ad">
+                    <path d="m11.25 13a.75.75 0 0 1 -.22.53l-2.75 2.75a.75.75 0 0 1 -1.06-1.06l2.22-2.22-2.22-2.22a.75.75 0 1 1 1.06-1.06l2.75 2.75c.141.14.22.331.22.53zm2 2a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5z"></path>
+                    <path
+                      clipRule="evenodd"
+                      d="m2 5.75c0-.966.784-1.75 1.75-1.75h20.5c.966 0 1.75.784 1.75 1.75v14.5a1.75 1.75 0 0 1 -1.75 1.75h-20.5a1.75 1.75 0 0 1 -1.75-1.75zm1.75-.25a.25.25 0 0 0 -.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25v-14.5a.25.25 0 0 0 -.25-.25z"
+                      fillRule="evenodd"></path>
+                  </g>
+                </svg>
+
+                <span className="text-truncate unselectable">git merge add-status-screens</span>
+              </li>
+            </ul>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              preserveAspectRatio="none"
+              viewBox="0 0 110 142"
+              className="d-none d-md-block position-relative home-branch offset-n1"
+              style={{ transform: 'scaleX(-1)' }}>
+              <path d="m1-8c0 75 108 75 108 150" strokeWidth="2" vectorEffect="non-scaling-stroke"></path>
+            </svg>
+            <div className="gitlog-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                height="28"
+                viewBox="0 0 28 20"
+                width="28"
+                className="">
+                <circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" strokeWidth="2"></circle>
+              </svg>
+              git checkout -b origin add-status-screens
+            </div>
+          </div>
+          <div className="seniorinfo-part2-other">
+            <div className="turn1"></div>
+            <div className="turn2"></div>
+          </div>
+        </div>
+      </div>
+      <div className="seniorinfo-part3"></div>
     </div>
   )
 }
