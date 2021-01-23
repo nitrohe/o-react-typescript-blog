@@ -7,8 +7,6 @@ import { HashRouter as Router, Routes, Route, Switch } from 'react-router-dom'
 import HomeComponent from '@views/Home'
 // const HomeComponent = loadable(() => import(/* webpackChunkName: "home" */ /* webpackPreload: true */ './views/Home'))
 import NotFoundComponent from '@components/notFound'
-//const Demo1Component = loadable(() => import(/* webpackChunkName: "demo1" */ './views/Demo1'))
-//const Demo2Component = loadable(() => import(/* webpackChunkName: "demo2" */ './views/Demo2'))
 
 class App extends React.Component {
   render(): JSX.Element {

@@ -7,8 +7,8 @@ import Loading from '@components/loading'
 
 const { lazy, Suspense } = React
 
-const Demo1 = lazy(() => import(/* webpackChunkName:"dashboard" */ '@views/Demo1'))
-const About = lazy(() => import(/* webpackChunkName:"demo" */ '@views/About'))
+const About = lazy(() => import(/* webpackChunkName:"About" */ '@views/About'))
+const Article = lazy(() => import(/* webpackChunkName:"Article" */ '@views/Article'))
 
 export const routes: RouteProps[] = [
   {
@@ -17,9 +17,9 @@ export const routes: RouteProps[] = [
     component: About
   },
   {
-    path: '/demo1',
+    path: '/article',
     exact: true,
-    component: Demo1
+    component: Article
   }
 ]
 

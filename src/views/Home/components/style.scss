@@ -24,6 +24,9 @@
   /*overflow: hidden;*/
 
 }
+.menu-site{
+  color: #757575;
+}
 .menu-logo{
   float: left;
   height: 56px;
@@ -51,17 +54,19 @@
   cursor: pointer;
   float: left;
   /*color: #eee;*/
-  font-size: 16px;
   line-height: 60px;
   padding: 0 25px;
-    list-style-type:none;
+  list-style-type:none;
+  font-weight: 500;
+  font-size: 16px;
 }
-.menu-item:hover{
-  /*background-color: #484C57;*/
-  background-color: #F5F5F5;
-  height: 60px;
-  border-bottom: 2px solid #edefee;
-  display: block;
+// .menu-item:hover{
+//   height: 60px;
+//   display: block;
+//   color: #009a61;
+// }
+.menu-item.active{
+  color: #009a61;
 }
 .menu-item-sel{
   position: relative;
