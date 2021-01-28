@@ -24,14 +24,22 @@ const HeaderComponent: FC<IHeaderProps> = props => {
     { name: '文章', key: 'article' }
   ]
 
+  // const liList = menuItems.map((item, index) => (
+  //   <li
+  //     key={item.key}
+  //     className={`menu-item ${item.key === menuActive ? 'active' : ''}`}
+  //     onClick={e => onMenuClick(item.key)}>
+  //     {item.name}
+  //   </li>
+  // ))
   const liList = menuItems.map((item, index) => (
-    <li
-      key={item.key}
-      className={`menu-item ${item.key === menuActive ? 'active' : ''}`}
-      onClick={e => onMenuClick(item.key)}>
-      {item.name}
+    <li className="menu__item" key={item.key}>
+      <span className={`${item.key === menuActive ? 'active-nav' : ''}`} onClick={e => onMenuClick(item.key)}>
+        {item.name}
+      </span>
     </li>
   ))
+
   return (
     <Header
       style={{
@@ -44,15 +52,31 @@ const HeaderComponent: FC<IHeaderProps> = props => {
         alignItems: 'center',
         backgroundColor: 'transparent'
       }}>
-      <div style={{ flex: '1 1 0' }} className={`menu-nav ${menuActive ? 'menu-site' : ''}`}>
-        <a className="menu-logo" href="/">
-          {/*<img
+      <div className={`menu-nav ${!menuActive ? 'menu-home' : ''}`}>
+        {/*<a className="menu-logo" href="/">
+         <img
             src="https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
             alt="Nav logo"
-          />*/}
-        </a>
+          />
+        </a>*/}
         <div className="menu-container">
-          <ul className="menu-nav-ul">{liList}</ul>
+          <div className="menu-logo-wrapper">
+            <a className={`menu-logo ${!menuActive ? 'menu-hidden' : ''}`} href="/"></a>
+          </div>
+          <ul className="menu-list">{liList}</ul>
+          {/*<ul className="menu-nav-ul">{liList}</ul>*/}
+        </div>
+        <div className={`menu-login ${!menuActive ? 'menu-hidden' : ''}`}>
+          <ul >
+            <li className="opts__item">
+              <a href="/user/login" className="btn-signin">
+                立即登录
+              </a>
+              <a href="/user/register" className="ml10 btn-signup">
+                免费注册
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </Header>

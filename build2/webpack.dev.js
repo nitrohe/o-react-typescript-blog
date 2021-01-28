@@ -7,11 +7,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const devConfig = {
   mode: 'development',
-  target:'web',
+  target: 'web',
   devtool: 'eval-cheap-module-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
+      favicon: './public/favicon-logo.png',
       template: 'public/index.html',
       inject: true
     }),

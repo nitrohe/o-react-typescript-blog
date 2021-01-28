@@ -11,7 +11,7 @@ module.exports = {
   // index: path.resolve(__dirname, `./../dist/${constants.APP_ENV}/index.html`),
   // assetsRoot: path.resolve(__dirname, `./../dist/${constants.APP_ENV}`),
   assetsPublicPath: APP_ENV === 'dev' ? '/' : `${STATICDOMAIN}/`,
-  assetsSubDirectory: '',
+  assetsSubDirectory: '/assets',
   isHash: APP_ENV === 'dev' ? 'fullhash' : 'chunkhash:8',
   // page Pattern for workbox
   // pagePattern: new RegExp(DOMAIN),

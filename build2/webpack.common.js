@@ -25,6 +25,7 @@ module.exports = {
   },
   output: {
     // publicPatch: '//【cdn】.com', //指定存放JS文件的CDN地址
+    //publicPatch: '/',
     filename: `js/[name].[${config.isHash}].js`,
     // chunkFilename: 'js/[name].[${config.isHash}].chunk.js',
     path: resolve('../dist')
@@ -137,14 +138,18 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        include: resolve('../src'),
         use: [
           {
             loader: 'url-loader',
             options: {
+              //publicPath: resolve('../src'),
               //1024 == 1kb
               //小于10kb时打包成base64编码的图片否则单独打包成图片
               limit: 10240,
-              name: assetsPath('img/[name].[fullhash:7].[ext]')
+              //name: assetsPath('img/[name].[fullhash:7].[ext]')
+              //name: assetsPath('img/[name].[ext]')
+              name: 'assets/img/[name].[ext]'
             }
           }
         ]
