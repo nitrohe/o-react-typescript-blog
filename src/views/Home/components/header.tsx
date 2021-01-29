@@ -32,8 +32,15 @@ const HeaderComponent: FC<IHeaderProps> = props => {
   //     {item.name}
   //   </li>
   // ))
-  const liList = menuItems.map((item, index) => (
+  const liTopList = menuItems.map((item, index) => (
     <li className="menu__item" key={item.key}>
+      <span className={`${item.key === menuActive ? 'active-nav' : ''}`} onClick={e => onMenuClick(item.key)}>
+        {item.name}
+      </span>
+    </li>
+  ))
+  const liBottomList = menuItems.map((item, index) => (
+    <li className="opts-group" key={item.key}>
       <span className={`${item.key === menuActive ? 'active-nav' : ''}`} onClick={e => onMenuClick(item.key)}>
         {item.name}
       </span>
@@ -59,15 +66,16 @@ const HeaderComponent: FC<IHeaderProps> = props => {
             alt="Nav logo"
           />
         </a>*/}
+        <div className="bottom-container visible-sm">{liBottomList}</div>
         <div className="menu-container">
           <div className="menu-logo-wrapper">
             <a className={`menu-logo ${!menuActive ? 'menu-hidden' : ''}`} href="/"></a>
           </div>
-          <ul className="menu-list">{liList}</ul>
+          <ul className="menu-list hidden-sm">{liTopList}</ul>
           {/*<ul className="menu-nav-ul">{liList}</ul>*/}
         </div>
-        <div className={`menu-login ${!menuActive ? 'menu-hidden' : ''}`}>
-          <ul >
+        <div className={`menu-login hidden-sm ${!menuActive ? 'menu-hidden' : ''}`}>
+          <ul>
             <li className="opts__item">
               <a href="/user/login" className="btn-signin">
                 立即登录

@@ -1,3 +1,5 @@
+/** @format */
+
 const path = require('path')
 const config = require('./config')
 
@@ -9,6 +11,6 @@ exports.resolveAssetsRootDir = function (dir) {
   return path.join(dir)
 }
 
-exports.assetsPath = function(_path) {
+exports.assetsPath = function (_path) {
   return path.posix.join(config.assetsSubDirectory, _path)
 }

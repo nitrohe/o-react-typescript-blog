@@ -5,7 +5,7 @@
   //padding-left: 15px;
   //padding-right: 15px;
   //width: 16.66667%;
-  float: left;
+  //float: left;
   color: #757575;
   margin-top: 20px;
 }
@@ -55,4 +55,21 @@
   text-decoration: none;
   margin-bottom: 1px;
   border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .nav-router-box {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-router-box-item {
+    width: 25%;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    //overflow: hidden;
+    color: #757575;
+  }
+
 }
